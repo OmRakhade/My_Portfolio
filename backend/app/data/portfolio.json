@@ -1,0 +1,825 @@
+{
+  "personal": {
+    "name": "Om Rakhade",
+    "headline": "AI Engineer / Full-Stack Developer",
+    "location": "Maharashtra, India",
+    "email": "omanilrakhade07@gmail.com",
+    "phone": "+91-7057676048",
+    "github": "https://github.com/OmRakhade",
+    "linkedin": "https://www.linkedin.com/in/om-rakhade-522a23233/?originalSubdomain=in",
+    "portfolio": "",
+
+    "about": "I am a frontend-focused Software Developer with hands-on experience building responsive web and mobile applications using React.js, Next.js, TypeScript, Flutter, and REST APIs. I enjoy building reusable UI components, developing scalable application architectures, integrating frontend systems with backend services, and solving real-world engineering problems. Alongside software development, I am actively exploring Artificial Intelligence, Generative AI, LLMs, RAG, and AI-powered applications. I have experience working on projects involving full-stack development, cloud services, databases, APIs, payment workflows, and AI technologies.",
+
+    "short_about": "Frontend-focused Software Developer experienced in React.js, Next.js, TypeScript, Flutter, REST APIs, and scalable application development, with a growing focus on AI, Generative AI, LLMs, and intelligent applications.",
+
+    "interests": [
+      "Artificial Intelligence",
+      "Generative AI",
+      "Large Language Models",
+      "Retrieval-Augmented Generation",
+      "AI Agents",
+      "Software Development",
+      "Frontend Development",
+      "Full-Stack Development",
+      "Backend Development",
+      "System Design",
+      "Hackathons",
+      "Technology Entrepreneurship",
+      "Research",
+      "Football"
+    ],
+
+    "career_focus": [
+      "AI Engineering",
+      "Software Engineering",
+      "Frontend Engineering",
+      "Full-Stack Development",
+      "Generative AI",
+      "Backend Engineering",
+      "AI Agent Systems"
+    ]
+  },
+
+  "education": [
+    {
+      "degree": "B.Tech",
+      "field": "Information Technology",
+      "institution": "Shri Guru Gobind Singhji Institute of Engineering and Technology",
+      "location": "Nanded, Maharashtra, India",
+      "status": "Currently pursuing",
+      "start_year": "2024",
+      "end_year": "2027",
+      "cgpa": "7.09/10",
+      "relevant_subjects": [
+        "Data Structures and Algorithms",
+        "Database Management Systems",
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Deep Learning",
+        "Computer Networks",
+        "Cryptography and Network Security",
+        "Software Engineering"
+      ]
+    },
+    {
+      "degree": "Diploma",
+      "field": "Artificial Intelligence & Machine Learning",
+      "institution": "Government Polytechnic College",
+      "location": "Nagpur, Maharashtra, India",
+      "status": "Completed",
+      "start_year": "2021",
+      "end_year": "2024",
+      "percentage": "92.20%",
+      "achievement": "Passed with distinction"
+    },
+    {
+      "degree": "10th",
+      "institution": "New English Hight School, Ner persopant, Yavatmal",
+      "status": "Completed",
+      "percentage": "92%"
+    }
+  ],
+
+  "skills": {
+    "programming_languages": [
+      "Python",
+      "Java",
+      "JavaScript",
+      "TypeScript",
+      "SQL"
+    ],
+
+    "frontend": [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "HTML5",
+      "CSS",
+      "Tailwind CSS",
+      "Responsive Web Design"
+    ],
+
+    "mobile": [
+      "Flutter"
+    ],
+
+    "backend": [
+      "FastAPI",
+      "REST APIs",
+      "Python Backend Development",
+      "Spring Boot",
+      "Firebase Integration"
+    ],
+
+    "databases": [
+      "PostgreSQL",
+      "MySQL",
+      "Firebase",
+      "Prisma ORM",
+      "SQLAlchemy",
+      "Qdrant"
+    ],
+
+    "ai_ml": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Deep Learning",
+      "Natural Language Processing",
+      "Generative AI",
+      "Large Language Models",
+      "Retrieval-Augmented Generation",
+      "AI Agents",
+      "Scikit-learn"
+    ],
+
+    "llm_and_agents": [
+      "LangChain",
+      "LangGraph",
+      "LlamaIndex",
+      "LLM Orchestration",
+      "Agent Workflows",
+      "Prompt Engineering",
+      "Local LLMs",
+      "Ollama",
+      "Groq",
+      "OpenAI API",
+      "Gemini API"
+    ],
+
+    "ai_rag": [
+      "Retrieval-Augmented Generation",
+      "Vector Databases",
+      "Qdrant",
+      "Embeddings",
+      "Reranking",
+      "BAAI BGE",
+      "BAAI BGE Reranker"
+    ],
+
+    "cloud": [
+      "AWS",
+      "AWS S3"
+    ],
+
+    "devops": [
+      "Docker",
+      "Docker Compose",
+      "Git",
+      "GitHub",
+      "CI/CD",
+      "GitHub Actions"
+    ],
+
+    "tools": [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Postman",
+      "Docker",
+      "Ollama"
+    ],
+
+    "development_concepts": [
+      "Component-Based Development",
+      "Reusable UI Components",
+      "Responsive Design",
+      "Frontend Architecture",
+      "Frontend-Backend Integration",
+      "REST API Integration",
+      "Application Debugging",
+      "Testing",
+      "Performance Optimization",
+      "Scalable Application Development",
+      "Modular UI Development",
+      "Maintainable Code"
+    ]
+  },
+
+  "experience": [
+    {
+      "company": "AuSaM Innovations Pvt Ltd",
+      "location": "Nagpur, Maharashtra, India",
+      "role": "Flutter & Full Stack Developer Intern",
+      "start_date": "October 2022",
+      "end_date": "February 2024",
+      "type": "Internship",
+
+      "technologies": [
+        "Flutter",
+        "Firebase",
+        "Frontend Development",
+        "Backend Integration"
+      ],
+
+      "responsibilities": [
+        "Developed scalable applications using reusable UI components.",
+        "Built responsive layouts for consistent user experiences.",
+        "Integrated Firebase Authentication.",
+        "Worked with Firebase Firestore.",
+        "Worked with Firebase Realtime Database.",
+        "Integrated Firebase Storage.",
+        "Worked on frontend-backend integration.",
+        "Performed application debugging and testing.",
+        "Worked on performance optimization."
+      ],
+
+      "skills_demonstrated": [
+        "Flutter Development",
+        "Full-Stack Development",
+        "Responsive UI Development",
+        "Firebase",
+        "Frontend-Backend Integration",
+        "Debugging",
+        "Testing",
+        "Performance Optimization"
+      ]
+    },
+
+    {
+      "company": "Datastack Technologies",
+      "location": "Pune, Maharashtra, India",
+      "role": "Web Development Intern",
+      "start_date": "February 2024",
+      "end_date": "May 2024",
+      "type": "Internship",
+
+      "technologies": [
+        "React.js",
+        "JavaScript",
+        "Frontend Development"
+      ],
+
+      "responsibilities": [
+        "Developed reusable React.js components.",
+        "Worked on scalable frontend architectures.",
+        "Built modular UI systems.",
+        "Applied component-based development practices.",
+        "Focused on maintainability and reusable interfaces."
+      ],
+
+      "skills_demonstrated": [
+        "React.js",
+        "Component-Based Development",
+        "Reusable Components",
+        "Frontend Architecture",
+        "Modular UI Development",
+        "Maintainable Code"
+      ]
+    },
+
+    {
+      "type": "Research Internship",
+      "area": "Theorem Provers and Autoformalization",
+      "description": "Worked on research related to theorem provers and LLM-assisted autoformalization, with a focus on Combinatorics on Words.",
+
+      "research_area": [
+        "Theorem Proving",
+        "Autoformalization",
+        "LLMs",
+        "Formal Mathematics",
+        "Combinatorics on Words"
+      ],
+
+      "tools_and_resources": [
+        "Lean 4",
+        "LeanDojo",
+        "Automatic Sequences"
+      ],
+
+      "evidence": [
+        "Studied theorem prover concepts.",
+        "Explored Lean 4.",
+        "Studied LeanDojo and LLM-assisted theorem proving.",
+        "Focused research on autoformalization for Combinatorics on Words."
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "Tadev Lagnam",
+      "category": "Full-Stack Web and Mobile Application",
+      "description": "A scalable matrimonial and event management platform supporting user, admin, and advertisement workflows.",
+      "role": "Developer",
+
+      "technologies": [
+        "Flutter",
+        "Spring Boot",
+        "AWS",
+        "Razorpay",
+        "GitHub Actions"
+      ],
+
+      "features": [
+        "User workflows",
+        "Admin workflows",
+        "Advertisement workflows",
+        "Profile filtering",
+        "Event registration",
+        "Payment workflows"
+      ],
+
+      "evidence": [
+        "Developed and deployed a scalable matrimonial and event management platform.",
+        "Built responsive interfaces.",
+        "Integrated backend services.",
+        "Implemented profile filtering workflows.",
+        "Implemented event registration workflows.",
+        "Integrated payment workflows.",
+        "Implemented CI/CD pipelines using GitHub Actions.",
+        "Worked on deployment and release management."
+      ]
+    },
+
+    {
+      "name": "EverGallery",
+      "category": "Full-Stack Web Application",
+      "description": "A platform for photographers and designers to create virtual albums, securely share galleries, and manage and monetize digital photography assets.",
+      "role": "Developer",
+
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Prisma",
+        "MySQL",
+        "AWS S3",
+        "React",
+        "CI/CD"
+      ],
+
+      "features": [
+        "Virtual photo albums",
+        "Album management",
+        "Secure album sharing",
+        "Shareable links",
+        "QR-based sharing",
+        "PIN-based album security",
+        "Personalized dashboard",
+        "Digital asset management",
+        "Gallery sharing",
+        "Media hosting",
+        "Digital asset monetization",
+        "Responsive UI"
+      ],
+
+      "architecture": {
+        "frontend": "Next.js App Router",
+        "language": "TypeScript",
+        "database": "MySQL",
+        "orm": "Prisma",
+        "storage": "AWS S3"
+      },
+
+      "evidence": [
+        "Designed the application architecture.",
+        "Architected a scalable album management platform.",
+        "Developed dashboard interfaces.",
+        "Implemented album creation and management.",
+        "Developed responsive component-based frontend workflows.",
+        "Worked with Prisma and MySQL.",
+        "Integrated AWS S3 for image storage.",
+        "Implemented secure image access using signed URLs.",
+        "Worked on responsive frontend components.",
+        "Implemented interactive gallery interfaces.",
+        "Implemented automated deployment workflows."
+      ],
+
+      "technical_challenges": [
+        "Prisma migration issues",
+        "Database relationships",
+        "AWS S3 signed URLs",
+        "Image loading and sizing",
+        "Next.js configuration",
+        "Responsive UI design"
+      ]
+    },
+
+    {
+      "name": "MEDILOON",
+      "category": "AI / Healthcare / Automation",
+      "description": "An AI-driven pharmacy automation platform designed to go beyond a traditional chatbot by combining conversational AI, medical safety validation, ordering automation, refill prediction, and pharmacy procurement intelligence.",
+      "role": "Developer",
+
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "SQLAlchemy",
+        "Alembic",
+        "Docker",
+        "Docker Compose",
+        "LangGraph",
+        "LLMs",
+        "Ollama",
+        "JWT Authentication"
+      ],
+
+      "architecture": {
+        "backend": "FastAPI",
+        "database": "PostgreSQL",
+        "authentication": "JWT",
+        "agent_orchestration": "LangGraph",
+        "llm": "Local LLM using Ollama",
+        "deployment": "Docker / Docker Compose"
+      },
+
+      "ai_agents": [
+        "Customer AI Assistant",
+        "Ordering Agent",
+        "Safety Agent",
+        "Forecast Agent",
+        "Procurement Agent"
+      ],
+
+      "core_flow": [
+        "Understand customer intent",
+        "Classify request",
+        "Validate medical context",
+        "Process medicine request",
+        "Create order",
+        "Predict future refills",
+        "Optimize pharmacy procurement"
+      ],
+
+      "database_entities": [
+        "users",
+        "medicines",
+        "carts",
+        "cart_items",
+        "conversations",
+        "messages",
+        "orders",
+        "order_items"
+      ],
+
+      "evidence": [
+        "Designed an AI agent architecture for pharmacy automation.",
+        "Implemented backend APIs using FastAPI.",
+        "Worked with PostgreSQL.",
+        "Designed database models for medicines, carts, conversations and orders.",
+        "Implemented JWT-based authentication.",
+        "Worked with LLM-based workflows.",
+        "Designed an intent classification and orchestration flow.",
+        "Explored LangGraph for multi-agent orchestration.",
+        "Containerized the backend environment using Docker."
+      ],
+
+      "technical_challenges": [
+        "Database migration issues",
+        "Foreign key relationship issues",
+        "API validation errors",
+        "LLM orchestration",
+        "Conversation and message persistence",
+        "Docker environment configuration"
+      ]
+    },
+
+    {
+      "name": "AI Safety Policy & Compliance RAG",
+      "category": "AI / RAG / Enterprise",
+      "description": "An enterprise-oriented RAG application designed to retrieve and analyze information from AI safety policies and compliance documents.",
+      "role": "Developer",
+
+      "technologies": [
+        "LlamaIndex",
+        "LangChain",
+        "Qdrant",
+        "PostgreSQL",
+        "BAAI BGE",
+        "BAAI BGE Reranker",
+        "LLMs"
+      ],
+
+      "features": [
+        "Document ingestion",
+        "Semantic retrieval",
+        "Vector search",
+        "Embedding generation",
+        "Reranking",
+        "Policy analysis",
+        "Question answering"
+      ],
+
+      "evidence": [
+        "Worked with enterprise RAG architecture.",
+        "Used vector databases for semantic retrieval.",
+        "Worked with embedding models.",
+        "Worked with reranking models.",
+        "Used LlamaIndex and LangChain for RAG workflows."
+      ]
+    },
+
+    {
+      "name": "AI Portfolio Assistant",
+      "category": "Generative AI / RAG / Personal AI",
+      "description": "An AI-powered personal portfolio assistant designed to represent Om's technical background, projects, skills, experience, achievements, education, research, and career information and answer questions from recruiters, interviewers, and companies.",
+      "role": "Developer",
+
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "LLMs",
+        "RAG",
+        "Next.js",
+        "Streamlit"
+      ],
+
+      "core_concept": "Instead of presenting a static resume, the system allows recruiters or companies to interact with an AI assistant that can answer questions about Om's background, technical skills, projects, achievements, education, experience, research, soft skills, and career.",
+
+      "knowledge_domains": [
+        "Personal information",
+        "Education",
+        "Technical skills",
+        "Projects",
+        "Achievements",
+        "Research",
+        "Experience",
+        "Soft skills",
+        "Career goals",
+        "Interview questions"
+      ],
+
+      "evidence": [
+        "Designed a structured personal knowledge base.",
+        "Worked on an AI assistant capable of answering questions about personal and professional information.",
+        "Designed frontend interfaces for the AI portfolio.",
+        "Worked on document-based knowledge ingestion.",
+        "Worked on handling large document inputs.",
+        "Designed profile and assistant UI components."
+      ]
+    }
+  ],
+
+  "leadership": [
+    {
+      "organization": "Information Technology Student Association",
+      "short_name": "ITSA",
+      "institution": "SGGS Institute of Engineering and Technology",
+      "role": "President",
+      "period": "2025-2026",
+      "slogan": "Dream it Build it Live it",
+
+      "vision": "Build a vibrant, socially responsible, and future-ready IT community.",
+
+      "focus_areas": [
+        "Unity and Culture",
+        "Alumni Network",
+        "Industry Connect",
+        "Skill Development",
+        "Visibility"
+      ],
+
+      "responsibilities": [
+        "Student leadership",
+        "Event planning",
+        "Team coordination",
+        "Technical event organization",
+        "Industry interaction",
+        "Student community building"
+      ],
+
+      "planned_activities": [
+        "Technical seminars",
+        "GATE seminar",
+        "Teacher's Day activities",
+        "Sports activities",
+        "Social impact activities",
+        "Industry-oriented events"
+      ]
+    }
+  ],
+
+  "hackathons": [
+    {
+      "name": "Smart India Hackathon",
+      "achievement": "Winner",
+      "year": "2023",
+      "description": "Winner of Smart India Hackathon 2023, Software Edition, organized by the Ministry of Power."
+    },
+
+    {
+      "name": "AI Odyssey 2023",
+      "achievement": "Runner-Up",
+      "year": "2023",
+      "institution": "Raisoni College of Engineering, Nagpur"
+    },
+
+    {
+      "name": "Hackathons",
+      "achievement": "Participated in 5+ hackathons",
+      "description": "Participated in more than five hackathons focused on AI-driven and scalable software solutions."
+    }
+  ],
+
+  "achievements": [
+    {
+      "title": "Winner – Smart India Hackathon 2023",
+      "description": "Winner of Smart India Hackathon 2023, Software Edition, organized by the Ministry of Power.",
+      "year": "2023"
+    },
+    {
+      "title": "Runner-Up – AI Odyssey 2023",
+      "description": "Runner-up at AI Odyssey 2023, Raisoni College of Engineering, Nagpur.",
+      "year": "2023"
+    },
+    {
+      "title": "5+ Hackathons",
+      "description": "Participated in more than five hackathons focused on AI-driven and scalable software solutions."
+    },
+    {
+      "title": "President – Information Technology Student Association",
+      "description": "Served as President of the Information Technology Student Association at SGGS Institute of Engineering and Technology.",
+      "year": "2025-2026"
+    }
+  ],
+
+  "certifications": [
+    {
+      "name": "5G Wireless Security",
+      "issuer": "IIT Hyderabad"
+    },
+    {
+      "name": "Career Edge – Communication, Collaboration & Teamwork",
+      "issuer": "TCS iON"
+    }
+  ],
+
+  "research": [
+    {
+      "topic": "Theorem Provers and Autoformalization",
+      "focus": "Exploring theorem proving and LLM-assisted autoformalization.",
+      "domain": "Artificial Intelligence / Formal Methods",
+      "specific_area": "Combinatorics on Words",
+
+      "technology": [
+        "Lean 4",
+        "LeanDojo",
+        "LLMs"
+      ]
+    },
+
+    {
+      "topic": "AI Safety and Compliance",
+      "focus": "Retrieval-Augmented Generation systems for analyzing AI safety policies and compliance documents.",
+
+      "technology": [
+        "LlamaIndex",
+        "LangChain",
+        "Qdrant",
+        "BAAI BGE",
+        "BAAI BGE Reranker",
+        "Reranking"
+      ]
+    }
+  ],
+
+  "soft_skills": {
+    "leadership": [
+      "Leadership",
+      "Team Coordination",
+      "Team Management",
+      "Decision Making",
+      "Taking Initiative",
+      "Event Leadership"
+    ],
+
+    "communication": [
+      "Communication",
+      "Technical Communication",
+      "Presentation",
+      "Explaining Technical Concepts",
+      "Interpersonal Communication"
+    ],
+
+    "teamwork": [
+      "Teamwork",
+      "Collaboration",
+      "Knowledge Sharing",
+      "Supporting Team Members"
+    ],
+
+    "problem_solving": [
+      "Problem Solving",
+      "Analytical Thinking",
+      "Debugging",
+      "Breaking Complex Problems into Smaller Components",
+      "Root Cause Analysis",
+      "Technical Troubleshooting"
+    ],
+
+    "work_style": [
+      "Hands-on",
+      "Project-oriented",
+      "Practical",
+      "Iterative",
+      "Experiment-driven",
+      "Solution-oriented",
+      "Detail-oriented"
+    ],
+
+    "learning": [
+      "Continuous Learning",
+      "Self Learning",
+      "Technical Curiosity",
+      "Research-oriented Learning",
+      "Adaptability",
+      "Learning New Technologies"
+    ],
+
+    "project_management": [
+      "Project Planning",
+      "Task Coordination",
+      "Event Management",
+      "Time Management",
+      "Prioritization",
+      "Execution"
+    ],
+
+    "professional_traits": [
+      "Ownership",
+      "Initiative",
+      "Curiosity",
+      "Persistence",
+      "Responsibility",
+      "Adaptability"
+    ]
+  },
+
+  "problem_solving": {
+    "approach": [
+      "Understand the problem before selecting a solution.",
+      "Break complex problems into smaller components.",
+      "Evaluate technology choices based on project requirements.",
+      "Debug systematically using errors and logs.",
+      "Iterate on the implementation.",
+      "Focus on building practical and production-oriented solutions."
+    ]
+  },
+
+  "development_preferences": {
+    "frontend": "Prefers modern component-based frontend development using React, Next.js, TypeScript and Tailwind CSS.",
+
+    "backend": "Prefers Python-based backend development using FastAPI for API-driven applications.",
+
+    "ai": "Interested in building practical AI systems using LLMs, RAG and agentic workflows.",
+
+    "architecture": "Interested in modular, scalable and production-oriented application architectures.",
+
+    "development_style": [
+      "Hands-on",
+      "Project-oriented",
+      "Iterative",
+      "Experiment-driven",
+      "Problem-solving focused"
+    ]
+  },
+
+  "career": {
+    "target_roles": [
+      "AI Engineer",
+      "AI/ML Engineer",
+      "Software Engineer",
+      "Frontend Developer",
+      "Full-Stack Developer",
+      "Backend Developer",
+      "Generative AI Engineer"
+    ],
+
+    "interested_domains": [
+      "Artificial Intelligence",
+      "Generative AI",
+      "Large Language Models",
+      "AI Agents",
+      "RAG",
+      "Software Engineering",
+      "Frontend Development",
+      "Full-Stack Development",
+      "Backend Engineering"
+    ],
+
+    "short_term_goals": [
+      "Become industry-ready as an AI/software engineer.",
+      "Strengthen Data Structures and Algorithms.",
+      "Improve Java and Python programming.",
+      "Build production-grade AI applications.",
+      "Gain practical experience with system design and scalable architectures."
+    ],
+
+    "long_term_goals": [
+      "Build advanced AI-powered products.",
+      "Work on real-world AI engineering problems.",
+      "Develop strong expertise in AI agents and LLM systems.",
+      "Build and scale technology products.",
+      "Combine software engineering with artificial intelligence to build useful products."
+    ]
+  },
+
+  "resume": {
+    "url": "",
+    "last_updated": "",
+    "summary": "Frontend-focused Software Developer with hands-on experience building responsive web and mobile applications using React.js, Next.js, TypeScript, Flutter, and REST APIs. Experienced in reusable UI components, component-based development, frontend-backend integration, debugging, and scalable application development."
+  }
+}

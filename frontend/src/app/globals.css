@@ -1,0 +1,255 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0d0e12;
+  --foreground: #f4f4f5;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* React Flow Dark Canvas */
+.portfolio-canvas {
+  background-color: #0d0e12 !important;
+}
+
+.react-flow__pane {
+  cursor: grab;
+}
+
+.react-flow__pane:active {
+  cursor: grabbing;
+}
+
+.react-flow__edge-path {
+  stroke: #818cf8 !important;
+  stroke-width: 1.5 !important;
+}
+
+.react-flow__connection-path {
+  stroke: #a855f7 !important;
+  stroke-width: 1.5 !important;
+}
+
+.react-flow__handle {
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.profile-panel-scene {
+  perspective: 1400px;
+}
+
+.profile-panel-flipper {
+  transform-style: preserve-3d;
+  transition: transform 700ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.profile-panel-flipper.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.profile-panel-face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.profile-panel-back {
+  transform: rotateY(180deg);
+}
+
+.workspace-root[data-theme="light"] {
+  background-color: #edf1ef !important;
+  color: #202c30;
+}
+
+.workspace-root[data-theme="light"] .portfolio-canvas {
+  background-color: #edf1ef !important;
+}
+
+.workspace-root[data-theme="light"] .chat-node-card,
+.workspace-root[data-theme="light"] .document-node-card {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  border-color: rgba(31, 48, 48, 0.16) !important;
+  color: #263538 !important;
+  box-shadow: 0 18px 40px rgba(36, 54, 51, 0.14) !important;
+}
+
+.workspace-root[data-theme="light"] .chat-node-card .text-white,
+.workspace-root[data-theme="light"] .chat-node-card .text-zinc-100,
+.workspace-root[data-theme="light"] .document-node-card .text-white,
+.workspace-root[data-theme="light"] .document-node-card .text-zinc-100 {
+  color: #203034 !important;
+}
+
+.workspace-root[data-theme="light"] .chat-node-card .text-zinc-300,
+.workspace-root[data-theme="light"] .chat-node-card .text-zinc-400,
+.workspace-root[data-theme="light"] .chat-node-card .text-zinc-500,
+.workspace-root[data-theme="light"] .document-node-card .text-zinc-300,
+.workspace-root[data-theme="light"] .document-node-card .text-zinc-400,
+.workspace-root[data-theme="light"] .document-node-card .text-zinc-500 {
+  color: #58676a !important;
+}
+
+.workspace-root[data-theme="light"] .chat-node-card [class*="bg-black/"],
+.workspace-root[data-theme="light"] .chat-node-card [class*="bg-white/"],
+.workspace-root[data-theme="light"] .document-node-card [class*="bg-white/"] {
+  background-color: rgba(31, 48, 48, 0.055) !important;
+}
+
+.workspace-root[data-theme="light"] .chat-node-card [class*="border-white/"],
+.workspace-root[data-theme="light"] .document-node-card [class*="border-white/"] {
+  border-color: rgba(31, 48, 48, 0.13) !important;
+}
+
+.workspace-root[data-theme="light"] .chat-node-card input {
+  color: #203034;
+}
+
+.workspace-root[data-theme="light"] .chat-node-card input::placeholder {
+  color: #758184;
+}
+
+.workspace-root[data-theme="light"] .workspace-brand,
+.workspace-root[data-theme="light"] .workspace-toolbar,
+.workspace-root[data-theme="light"] .workspace-zoom-controls,
+.workspace-root[data-theme="light"] .profile-panel-surface {
+  background-color: rgba(255, 255, 255, 0.94) !important;
+  border-color: rgba(31, 48, 48, 0.14) !important;
+  color: #263538 !important;
+  box-shadow: 0 12px 30px rgba(36, 54, 51, 0.12) !important;
+}
+
+.workspace-root[data-theme="light"] .workspace-brand .text-white,
+.workspace-root[data-theme="light"] .workspace-toolbar .text-zinc-300,
+.workspace-root[data-theme="light"] .workspace-toolbar .text-zinc-400,
+.workspace-root[data-theme="light"] .workspace-zoom-controls .text-zinc-400 {
+  color: #435457 !important;
+}
+
+.workspace-root[data-theme="light"] .workspace-navigation button,
+.workspace-root[data-theme="light"] .profile-toggle,
+.workspace-root[data-theme="light"] .mode-toggle {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(31, 48, 48, 0.15) !important;
+  color: #435457 !important;
+  box-shadow: 0 8px 20px rgba(36, 54, 51, 0.12) !important;
+}
+
+.workspace-root[data-theme="light"] .profile-panel-surface button,
+.workspace-root[data-theme="light"] .profile-panel-surface a {
+  background-color: #ffffff !important;
+  border-color: #d1ddda !important;
+  color: #405256 !important;
+  box-shadow: 0 3px 10px rgba(36, 54, 51, 0.08);
+}
+
+.workspace-root[data-theme="light"] .profile-panel-back .text-white {
+  color: #203034 !important;
+}
+
+.workspace-root[data-theme="light"] .profile-panel-back .text-zinc-200,
+.workspace-root[data-theme="light"] .profile-panel-back .text-zinc-300,
+.workspace-root[data-theme="light"] .profile-panel-back .text-zinc-400,
+.workspace-root[data-theme="light"] .profile-panel-back .text-zinc-500 {
+  color: #58676a !important;
+}
+
+.workspace-root[data-theme="light"] .profile-panel-back button[aria-pressed="true"] {
+  border-color: #9a7ae8 !important;
+  color: #5635a0 !important;
+}
+
+.workspace-root[data-theme="light"] .profile-panel-surface button:hover,
+.workspace-root[data-theme="light"] .profile-panel-surface a:hover {
+  background-color: #f3f7f5 !important;
+  border-color: #b9cbc4 !important;
+  color: #263b3e !important;
+}
+
+.workspace-root[data-theme="light"] .chat-node-card form {
+  background-color: #f8fbfa !important;
+  border-color: #d0ddda !important;
+}
+
+.workspace-root[data-theme="light"] .chat-node-card [class*="bg-purple-950/40"],
+.chat-expanded-overlay[data-theme="light"] [class*="bg-purple-950/40"] {
+  background-color: #f0ebff !important;
+  border-color: #d8cdf7 !important;
+  color: #4b3d70 !important;
+}
+
+.chat-expanded-overlay[data-theme="light"] {
+  background-color: #edf1ef !important;
+  color: #203034 !important;
+}
+
+.chat-expanded-overlay[data-theme="light"] h2,
+.chat-expanded-overlay[data-theme="light"] .text-white {
+  color: #203034 !important;
+}
+
+.chat-expanded-overlay[data-theme="light"] .text-zinc-300,
+.chat-expanded-overlay[data-theme="light"] .text-zinc-400 {
+  color: #58676a !important;
+}
+
+.chat-expanded-overlay[data-theme="light"] header,
+.chat-expanded-overlay[data-theme="light"] form {
+  border-color: rgba(31, 48, 48, 0.15) !important;
+}
+
+.chat-expanded-overlay[data-theme="light"] header button {
+  background-color: #ffffff !important;
+  border-color: #d1ddda !important;
+  color: #405256 !important;
+}
+
+.chat-expanded-overlay[data-theme="light"] form {
+  background-color: #f8fbfa !important;
+}
+
+.chat-expanded-overlay[data-theme="light"] input {
+  color: #203034;
+}
+
+.chat-expanded-overlay[data-theme="light"] input::placeholder {
+  color: #758184;
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
