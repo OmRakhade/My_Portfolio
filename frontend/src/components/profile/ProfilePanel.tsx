@@ -9,6 +9,7 @@ import {
   Mail,
   Lightbulb,
   Compass,
+  FileText,
   X,
   Globe,
 } from "lucide-react";
@@ -33,7 +34,7 @@ function getPortfolioEntries(
 
   if (section === "Education") {
     return portfolio.education.map((item) => ({
-      title: `${item.degree} in ${item.field}`,
+      title: [item.degree, item.field].filter(Boolean).join(" in "),
       description: item.institution,
       metadata: [item.status, item.year].filter(Boolean).join(" / "),
     }));
@@ -107,6 +108,7 @@ export function ProfilePanel() {
         ? "extracurricular"
         : "about";
   const sectionEntries = getPortfolioEntries(activeProfileSection, portfolio);
+  const resumeUrl = portfolio?.resume?.url.trim() || "";
   const socialLinks = [
     {
       href: portfolio?.personal.github || "",
@@ -196,27 +198,41 @@ export function ProfilePanel() {
             <span>Thoughts</span>
           </button>
 
-          {/* Extracurricular */}
-          <button
-            type="button"
-            onClick={() => {
-              setActiveProfileSection("Extracurricular");
-            }}
-            aria-pressed={activeProfileSection === "Extracurricular"}
-            className={cn(
-              "flex items-center justify-center gap-1.5",
-              "py-2 px-3 rounded-full",
-              "text-xs font-medium",
-              "transition-all duration-200",
-              "cursor-pointer border",
-              activeTab === "extracurricular"
-                ? "bg-purple-600/30 text-purple-200 border-purple-500/50 shadow-[0_0_14px_rgba(168,85,247,0.3)]"
-                : "bg-white/[0.04] text-zinc-300 border-white/[0.08] hover:text-white hover:bg-white/[0.08]"
-            )}
-          >
-            <Compass className="h-3.5 w-3.5 text-indigo-400" />
-            <span>Extracurricular</span>
-          </button>
+          {resumeUrl ? (
+            <a
+              href={resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn(
+                "flex items-center justify-center gap-1.5",
+                "py-2 px-3 rounded-full",
+                "text-xs font-medium",
+                "transition-all duration-200",
+                "cursor-pointer border",
+                "bg-white/[0.04] text-zinc-300 border-white/[0.08] hover:text-white hover:bg-white/[0.08]"
+              )}
+              title="Open resume in a new tab"
+            >
+              <FileText className="h-3.5 w-3.5 text-indigo-400" />
+              <span>Resume</span>
+            </a>
+          ) : (
+            <button
+              type="button"
+              disabled
+              title="Resume URL is not configured"
+              className={cn(
+                "flex items-center justify-center gap-1.5",
+                "py-2 px-3 rounded-full",
+                "text-xs font-medium",
+                "border border-white/[0.08] bg-white/[0.04] text-zinc-500 opacity-60",
+                "cursor-not-allowed"
+              )}
+            >
+              <FileText className="h-3.5 w-3.5 text-indigo-400" />
+              <span>Resume</span>
+            </button>
+          )}
         </div>
 
         {/* ===================================================== */}
@@ -685,10 +701,10 @@ export function ProfilePanel() {
                 </div>
               )}
             </div>
-
+{/* 
             <p className="border-t border-white/10 pt-3 font-mono text-[10px] text-zinc-500">
               {activeProfileSection.toUpperCase()} / 01
-            </p>
+            </p> */}
           </section>
         </div>
       </div>

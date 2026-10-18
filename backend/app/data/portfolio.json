@@ -77,7 +77,9 @@
       "degree": "10th",
       "institution": "New English Hight School, Ner persopant, Yavatmal",
       "status": "Completed",
-      "percentage": "92%"
+      "percentage": "92%",
+      "start_year":"2021",
+      "end_year":"2021"
     }
   ],
 
@@ -818,7 +820,7 @@
   },
 
   "resume": {
-    "url": "",
+    "url": "/resume/Om_Rakhade_IT.pdf",
     "last_updated": "",
     "summary": "Frontend-focused Software Developer with hands-on experience building responsive web and mobile applications using React.js, Next.js, TypeScript, Flutter, and REST APIs. Experienced in reusable UI components, component-based development, frontend-backend integration, debugging, and scalable application development."
   }
