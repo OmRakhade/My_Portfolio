@@ -33,28 +33,28 @@ export function BottomToolbar() {
           <button
             type="button"
             onClick={() => addDocumentNode()}
-            className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/[0.03] px-0 text-zinc-300 transition-all duration-200 hover:bg-purple-600/20 hover:text-purple-200 border border-white/[0.06] hover:border-purple-500/40 text-xs font-medium cursor-pointer shadow-sm md:h-9 md:w-auto md:justify-start md:gap-1.5 md:px-3.5"
+            className="flex h-10 w-auto shrink-0 items-center justify-center gap-1.5 whitespace-nowrap rounded-xl bg-white/[0.03] px-2.5 text-zinc-300 transition-all duration-200 hover:bg-purple-600/20 hover:text-purple-200 border border-white/[0.06] hover:border-purple-500/40 text-xs font-medium cursor-pointer shadow-sm md:h-9 md:px-3.5"
             aria-label="Add document"
             title="Add Document to Workspace"
           >
             <div className="flex h-4 w-4 items-center justify-center rounded-full bg-purple-500/20 text-purple-300">
               <Plus className="h-3 w-3" />
             </div>
-            <span className="max-md:sr">Add doc</span>
+            <span>Add doc</span>
           </button>
 
           {/* 3. RIGHT BUTTON: [+] new chat (Rounded square with [+] labeled "new chat" in sketch) */}
           <button
             type="button"
             onClick={() => addChatNode()}
-            className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-r from-purple-500 to-indigo-500 px-0 text-white border border-purple-400/40 text-xs font-semibold transition-all duration-200 shadow-[0_0_18px_rgba(168,85,247,0.35)] cursor-pointer hover:from-purple-600 hover:to-indigo-600 md:h-9 md:w-auto md:justify-start md:gap-1.5 md:px-3.5"
+            className="flex h-10 w-auto shrink-0 items-center justify-center gap-1.5 whitespace-nowrap rounded-xl bg-gradient-to-r from-purple-500 to-indigo-500 px-2.5 text-white border border-purple-400/40 text-xs font-semibold transition-all duration-200 shadow-[0_0_18px_rgba(168,85,247,0.35)] cursor-pointer hover:from-purple-600 hover:to-indigo-600 md:h-9 md:px-3.5"
             aria-label="New chat"
             title="Create New Chat Node"
           >
             <div className="flex h-4 w-4 items-center justify-center rounded bg-white/20 text-white">
               <Plus className="h-3 w-3 stroke-[2.5]" />
             </div>
-            <span className="max-md:sr">new chat</span>
+            <span>new chat</span>
           </button>
         </div>
       </div>
