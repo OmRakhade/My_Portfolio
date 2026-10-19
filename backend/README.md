@@ -11,6 +11,13 @@ From this directory, install the application dependencies and start FastAPI:
 
 Set `GROQ_API_KEY` in the backend environment before starting the service.
 
+For deployment, set `FRONTEND_ORIGINS` on the backend to a comma-separated list
+of exact browser origins, such as the Vercel production domain and any custom
+domain (scheme and host only, with no path). The single-origin
+`FRONTEND_ORIGIN` setting remains supported. Set `NEXT_PUBLIC_API_URL` in the
+frontend deployment to the backend's public base URL so the browser requests
+the deployed API instead of `localhost`.
+
 ## System Sources
 
 `app/data/portfolio.json` is always listed as a system document and supplied

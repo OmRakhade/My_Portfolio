@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import {
   ReactFlow,
@@ -16,9 +16,10 @@ import { DocumentNode } from "./DocumentNode";
 import { TopNavigation } from "@/components/navigation/TopNavigation";
 import { ProfilePanel } from "@/components/profile/ProfilePanel";
 import { BottomToolbar } from "@/components/toolbar/BottomToolbar";
+import { WorkspaceLoadError, WorkspaceLoader } from "@/components/common/WorkspaceStatus";
 import { apiClient } from "@/lib/api/client";
 import { API_ENDPOINTS } from "@/lib/api/endpoints";
-import type { Document } from "@/types";
+import type { Document, Portfolio } from "@/types";
 import "@xyflow/react/dist/style.css";
 
 const defaultEdgeOptions = {
@@ -43,14 +44,43 @@ function WorkspaceFlow() {
     isDarkMode,
     setSystemDocuments,
   } = useWorkspaceStore();
-  const { data: systemDocuments } = useQuery({
-    queryKey: ["system-documents"],
-    queryFn: () => apiClient<Document[]>(API_ENDPOINTS.DOCUMENTS.LIST),
+  const portfolioQuery = useQuery({
+    queryKey: ["portfolio"],
+    queryFn: () =>
+      apiClient<Portfolio>(API_ENDPOINTS.PORTFOLIO, { timeoutMs: 6000 }),
+    retry: false,
   });
+  const systemDocumentsQuery = useQuery({
+    queryKey: ["system-documents"],
+    queryFn: () =>
+      apiClient<Document[]>(API_ENDPOINTS.DOCUMENTS.LIST, { timeoutMs: 6000 }),
+    retry: false,
+  });
+  const systemDocuments = systemDocumentsQuery.data;
+  const isReady =
+    portfolioQuery.data !== undefined && systemDocuments !== undefined;
+  const loadFailed =
+    !isReady && (portfolioQuery.isError || systemDocumentsQuery.isError);
+  const isFetching = portfolioQuery.isFetching || systemDocumentsQuery.isFetching;
+  const [showLoadError, setShowLoadError] = useState(false);
+
+  useEffect(() => {
+    if (!loadFailed || isFetching) {
+      return;
+    }
+
+    const timeoutId = window.setTimeout(() => setShowLoadError(true), 1800);
+    return () => window.clearTimeout(timeoutId);
+  }, [isFetching, loadFailed]);
 
   useEffect(() => {
     if (systemDocuments) setSystemDocuments(systemDocuments);
   }, [systemDocuments, setSystemDocuments]);
+
+  const retryInitialLoad = () => {
+    setShowLoadError(false);
+    void Promise.all([portfolioQuery.refetch(), systemDocumentsQuery.refetch()]);
+  };
 
   const nodeTypes = useMemo(
     () => ({
@@ -59,6 +89,14 @@ function WorkspaceFlow() {
     }),
     []
   );
+
+  if (!isReady) {
+    if (loadFailed && showLoadError && !isFetching) {
+      return <WorkspaceLoadError onRetry={retryInitialLoad} />;
+    }
+
+    return <WorkspaceLoader />;
+  }
 
   return (
     <div
