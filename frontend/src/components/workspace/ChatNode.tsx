@@ -211,7 +211,7 @@ function ChatNodeComponent({ id, data, selected }: NodeProps<ChatWorkspaceNode>)
             Ask a question about the information in my portfolio.
           </p>
           <div className="nodrag mt-2.5 flex flex-wrap gap-1.5">
-            {["Skills", "Eduction", "Experiences", "Achivements"].map((topic) => (
+            {["Skills", "Education", "Experiences", "Achivements"].map((topic) => (
               <button
                 key={topic}
                 type="button"

@@ -63,7 +63,7 @@ function WorkspaceFlow() {
   return (
     <div
       data-theme={isDarkMode ? "dark" : "light"}
-      className="workspace-root relative h-screen w-screen overflow-hidden bg-[#0d0e12] select-none"
+      className="workspace-root relative h-dvh w-dvw overflow-hidden bg-[#0d0e12] select-none"
     >
       {/* Ambient Radial Glow Lighting in Canvas Background */}
       <div className="pointer-events-none absolute top-1/4 left-1/3 h-[650px] w-[650px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-600/[0.08] blur-[150px]" />

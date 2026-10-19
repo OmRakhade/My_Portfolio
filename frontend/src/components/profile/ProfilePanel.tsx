@@ -136,7 +136,7 @@ export function ProfilePanel() {
     <aside
       aria-label="Profile Panel"
       className={cn(
-        "fixed top-20 right-6 bottom-6 w-[360px] z-20",
+        "fixed top-16 right-3 bottom-16 left-3 z-20 w-auto md:top-20 md:right-6 md:bottom-6 md:left-auto md:w-[360px]",
         "select-none pointer-events-auto",
         "flex flex-col transition-all duration-300 ease-in-out",
         isProfileOpen

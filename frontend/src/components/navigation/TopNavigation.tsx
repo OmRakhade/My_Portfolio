@@ -30,13 +30,13 @@ export function TopNavigation() {
   } = useWorkspaceStore();
 
   return (
-    <header className="fixed top-5 left-6 right-6 z-30 flex items-center justify-between pointer-events-none select-none">
+    <header className="fixed top-3 left-3 right-3 z-30 flex items-center justify-between pointer-events-none select-none md:top-5 md:left-6 md:right-6">
       {/* Left: Studio Branding Pill */}
-      <div className="workspace-brand pointer-events-auto flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#16171c]/85 backdrop-blur-xl border border-white/[0.08] shadow-2xl shadow-black/80 shadow-[inset_0_1px_1px_rgba(255,255,255,0.06)]">
+      <div className="workspace-brand pointer-events-auto flex h-9 w-9 items-center justify-center rounded-full bg-[#16171c]/85 backdrop-blur-xl border border-white/[0.08] shadow-2xl shadow-black/80 shadow-[inset_0_1px_1px_rgba(255,255,255,0.06)] md:h-auto md:w-auto md:justify-start md:gap-2.5 md:px-3.5 md:py-1.5">
         <div className="flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-tr from-purple-500/20 to-indigo-500/20 border border-purple-500/30 text-purple-300">
           <Sparkles className="h-3.5 w-3.5" />
         </div>
-        <div className="flex items-center gap-2 text-xs">
+        <div className="hidden items-center gap-2 text-xs md:flex">
           <span className="font-semibold text-white tracking-tight">
             AI Workspace
           </span>
@@ -50,7 +50,7 @@ export function TopNavigation() {
       {/* Center: 4 Rounded Square Icon Buttons (Exact Wireframe Sketch: Education, Skills, Experience, Projects) */}
       <nav
         aria-label="Portfolio Main Navigation"
-        className="workspace-navigation pointer-events-auto hidden md:flex items-center gap-2"
+        className="workspace-navigation pointer-events-auto flex items-center gap-1 md:gap-2"
       >
         {NAV_ICONS.map(({ label, icon: Icon }) => (
           <button
@@ -61,8 +61,9 @@ export function TopNavigation() {
               setProfileOpen(true);
             }}
             aria-pressed={activeProfileSection === label}
+            aria-label={label}
             className={cn(
-              "group relative flex flex-col items-center justify-center h-10 w-11 rounded-xl",
+              "group relative flex h-9 w-9 items-center justify-center rounded-xl md:h-10 md:w-11",
               activeProfileSection === label
                 ? "bg-purple-600/25 border-purple-500/40 text-purple-200"
                 : "bg-white/[0.03] hover:bg-purple-600/20 border-white/[0.06] hover:border-purple-500/40 text-zinc-400 hover:text-white",
@@ -71,14 +72,15 @@ export function TopNavigation() {
             title={label}
           >
             <Icon className="h-4 w-4 transition-transform group-hover:scale-110" />
-           
           </button>
         ))}
       </nav>
 
       {/* Right: Zoom Controls & Profile Panel Toggle */}
       <div className="pointer-events-auto flex items-center gap-2.5">
-        <WorkspaceControls />
+        <div className="hidden md:block">
+          <WorkspaceControls />
+        </div>
 
         <button
           type="button"
