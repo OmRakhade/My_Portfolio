@@ -309,12 +309,12 @@ function ChatNodeComponent({ id, data, selected }: NodeProps<ChatWorkspaceNode>)
         createPortal(
           <div
             data-theme={isDarkMode ? "dark" : "light"}
-            className="chat-expanded-overlay fixed inset-0 z-[100] flex h-screen w-screen flex-col bg-[#0d0e12] p-6 text-zinc-100 md:px-16 md:py-10"
+            className="chat-expanded-overlay fixed inset-0 z-[100] flex h-dvh w-dvw flex-col overflow-hidden bg-[#0d0e12] px-3 pt-[calc(env(safe-area-inset-top)+0.75rem)] pb-[calc(env(safe-area-inset-bottom)+0.75rem)] text-zinc-100 md:px-16 md:py-10"
             role="dialog"
             aria-modal="true"
             aria-labelledby={`chat-title-${id}`}
           >
-            <header className="flex w-full items-start justify-between border-b border-white/10 pb-5">
+            <header className="flex w-full shrink-0 items-start justify-between gap-2 border-b border-white/10 pb-3 sm:pb-5">
               <div>
                 <h2 id={`chat-title-${id}`} className="text-xl font-semibold text-white">
                   {data.title || "Interactive Agent"}
@@ -351,7 +351,7 @@ function ChatNodeComponent({ id, data, selected }: NodeProps<ChatWorkspaceNode>)
               </div>
             </header>
 
-            <div className="flex min-h-0 flex-1 justify-center overflow-y-auto py-8 select-text cursor-auto">
+            <div className="flex min-h-0 flex-1 justify-center overflow-y-auto py-3 sm:py-8 select-text cursor-auto">
               <div className="w-full max-w-4xl space-y-3">
                 {data.messages.map((message) => (
                   <div
@@ -381,7 +381,7 @@ function ChatNodeComponent({ id, data, selected }: NodeProps<ChatWorkspaceNode>)
 
             <form
               onSubmit={handleSend}
-              className="mx-auto flex w-full max-w-4xl items-center gap-2 rounded-xl border border-white/[0.1] bg-black/40 p-2 focus-within:border-purple-500/40"
+              className="mx-auto flex w-full max-w-4xl shrink-0 items-center gap-2 rounded-xl border border-white/[0.1] bg-black/40 p-2 focus-within:border-purple-500/40"
             >
               <input
                 type="text"
@@ -394,7 +394,7 @@ function ChatNodeComponent({ id, data, selected }: NodeProps<ChatWorkspaceNode>)
               <button
                 type="submit"
                 disabled={!inputVal.trim() || isSending}
-                className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-r from-purple-500 to-indigo-500 text-white disabled:opacity-40"
+                className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-gradient-to-r from-purple-500 to-indigo-500 text-white disabled:opacity-40 md:h-9 md:w-9"
                 aria-label="Send query"
               >
                 <ArrowUp className="h-4 w-4" />
