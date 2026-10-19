@@ -20,6 +20,21 @@ import { cn } from "@/lib/utils";
 import type { ChatWorkspaceNode } from "@/types";
 import { ChatMessageContent } from "./ChatMessageContent";
 
+const QUICK_PROMPTS = [
+  { label: "Skills", prompt: "Summarize Om's documented technical skills." },
+  { label: "Education", prompt: "Summarize Om's education history." },
+  {
+    label: "Experience",
+    prompt:
+      "Summarize Om's employment and internships, including organizations, roles, dates, and documented responsibilities. Do not substitute project work for employment.",
+  },
+  {
+    label: "Achievements",
+    prompt:
+      "Summarize Om's listed awards, hackathon results, and leadership achievements. State participation counts exactly as documented; do not infer additional events.",
+  },
+] as const;
+
 function ChatNodeComponent({ id, data, selected }: NodeProps<ChatWorkspaceNode>) {
   const { chats, deleteChatNode, sendChatMessage, isDarkMode, toggleDarkMode } =
     useWorkspaceStore();
@@ -211,15 +226,15 @@ function ChatNodeComponent({ id, data, selected }: NodeProps<ChatWorkspaceNode>)
             Ask a question about the information in my portfolio.
           </p>
           <div className="nodrag mt-2.5 flex flex-wrap gap-1.5">
-            {["Skills", "Education", "Experiences", "Achivements"].map((topic) => (
+            {QUICK_PROMPTS.map(({ label, prompt }) => (
               <button
-                key={topic}
+                key={label}
                 type="button"
-                onClick={() => sendChatMessage(id, `Tell me about your ${topic}`)}
+                onClick={() => sendChatMessage(id, prompt)}
                 disabled={isSending}
                 className="nodrag px-2 py-0.5 rounded-full bg-white/[0.05] hover:bg-purple-600/20 text-zinc-300 hover:text-purple-200 border border-white/[0.06] hover:border-purple-500/30 text-[10px] transition-colors cursor-pointer"
               >
-                {topic}
+                {label}
               </button>
             ))}
           </div>

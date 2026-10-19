@@ -147,7 +147,7 @@ class PortfolioContextEngine:
             "langgraph", "langchain", "llamaindex", "database", "databases", "devops"
         })
         wants_experience = bool(q_tokens & {
-            "experience", "work", "job", "internship", "intern", "company", "worked", "employment",
+            "experience", "experiences", "work", "job", "internship", "intern", "company", "worked", "employment",
             "ausam", "datastack"
         })
         wants_education = bool(q_tokens & {
@@ -155,7 +155,7 @@ class PortfolioContextEngine:
             "percentage", "school", "b.tech", "btech", "marks", "grades", "study", "studied", "coursework"
         })
         wants_achievements = bool(q_tokens & {
-            "achievement", "achievements", "hackathon", "hackathons", "sih", "smart", "odyssey",
+            "achievement", "achievements", "achivements", "hackathon", "hackathons", "sih", "smart", "odyssey",
             "award", "awards", "prize", "winner", "competition"
         })
         wants_leadership = bool(q_tokens & {

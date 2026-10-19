@@ -40,7 +40,7 @@ export function BottomToolbar() {
             <div className="flex h-4 w-4 items-center justify-center rounded-full bg-purple-500/20 text-purple-300">
               <Plus className="h-3 w-3" />
             </div>
-            <span className="max-md:sr-only">Add doc</span>
+            <span className="max-md:sr">Add doc</span>
           </button>
 
           {/* 3. RIGHT BUTTON: [+] new chat (Rounded square with [+] labeled "new chat" in sketch) */}
@@ -54,7 +54,7 @@ export function BottomToolbar() {
             <div className="flex h-4 w-4 items-center justify-center rounded bg-white/20 text-white">
               <Plus className="h-3 w-3 stroke-[2.5]" />
             </div>
-            <span className="max-md:sr-only">new chat</span>
+            <span className="max-md:sr">new chat</span>
           </button>
         </div>
       </div>
