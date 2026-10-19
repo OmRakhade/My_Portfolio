@@ -117,7 +117,7 @@ function DocumentNodeComponent({ id, data, selected }: NodeProps<DocumentWorkspa
             <button
               type="button"
               onClick={handleDelete}
-              className="absolute right-3 top-3 flex h-6 w-6 items-center justify-center rounded-full text-zinc-500 opacity-0 transition-all hover:bg-black/60 hover:text-rose-400 group-hover:opacity-100"
+              className="absolute right-3 top-3 flex h-6 w-6 items-center justify-center rounded-full text-zinc-500 opacity-100 transition-all hover:bg-black/60 hover:text-rose-400 md:opacity-0 md:group-hover:opacity-100 focus-visible:opacity-100"
               title="Delete document"
               aria-label="Delete document"
             >
@@ -143,7 +143,7 @@ function DocumentNodeComponent({ id, data, selected }: NodeProps<DocumentWorkspa
           <button
             type="button"
             onClick={handleDelete}
-            className="flex h-5 w-5 items-center justify-center rounded-full bg-black/40 text-zinc-500 opacity-0 group-hover:opacity-100 hover:text-rose-400 hover:bg-black/80 transition-all border border-white/5 cursor-pointer ml-auto"
+            className="flex h-5 w-5 items-center justify-center rounded-full bg-black/40 text-zinc-500 opacity-100 md:opacity-0 md:group-hover:opacity-100 focus-visible:opacity-100 hover:text-rose-400 hover:bg-black/80 transition-all border border-white/5 cursor-pointer ml-auto"
             title="Delete document"
             aria-label="Delete document"
           >
